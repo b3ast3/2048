@@ -9,13 +9,15 @@
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <script>
+  function changeBackground() {
   document.body.style.background = '#'+Math.random().toString(16).substr(-6);
+  }
   </script>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
-<body>
+<body onload=changeBackground()>
   <div class="container">
     <div class="heading">
       <h1 class="title">2048</h1>
